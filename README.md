@@ -7,4 +7,9 @@
 * run `terraform apply` and wait for setup your cluster
 * enjoy stable kubernates cluster by using files created in `output` directory
 
+## May be useful:
+```
+export KUBECONFIG=$(pwd)/$(terraform output kubeconfig)
+```
+
 TBC
