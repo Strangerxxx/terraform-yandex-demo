@@ -4,3 +4,5 @@
 terraform.d/
 .idea/
 .terraform/
+output/
+bin/
