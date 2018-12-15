@@ -1,5 +1,5 @@
 resource "yandex_compute_instance" "master" {
-  name        = "master-${count.index}"
+  name        = "${var.cluster_name}-master-${count.index}"
   platform_id = "standard-v1"
   zone        = "ru-central1-a"
 
@@ -38,7 +38,7 @@ resource "yandex_compute_instance" "master" {
   }
 }
 resource "yandex_compute_instance" "worker" {
-  name        = "worker-${count.index}"
+  name        = "${var.cluster_name}-worker-${count.index}"
   platform_id = "standard-v1"
   zone        = "ru-central1-a"
 
